@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio de Mekaïl Mebarki</title>
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Portfolio de Mekaïl Mebarki</h1>
+    </div>
+</header>
+
+<nav class="container">
+    <a href="#presentation">Présentation</a>
+    <a href="#competences">Compétences</a>
+    <a href="#stage">Stage</a>
+    <a href="#veille">Veille Technologique</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <img src="https://i.ibb.co/jbhJ3HY/photo-identite.jpg" class="profile-photo" alt="Photo de Mekaïl Mebarki">
+</div>
+
+<div class="container content" id="presentation">
+    <h2>Présentation</h2>
+    <p>Bienvenue sur mon portfolio. Je suis Mekaïl Mebarki, actuellement en 2ème année de BTS SIO option SLAM. Après avoir travaillé comme maître nageur, j'ai repris mes études à l'âge de 23 ans et je suis passionné par le développement et les nouvelles technologies. J'aimerais poursuivre mes études après mon BTS pour devenir chef de projet et encadrer une équipe de développeurs Full-Stack.</p>
+</div>
+
+<div class="container content" id="competences">
+    <h2>Compétences</h2>
+    
+        <div class="skills-container">
+           
+            <div class="skill">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="HTML5">
+                HTML5
+            </div>
+            <div class="skill">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" alt="CSS3">
+                CSS3
+            </div>
+            <div class="skill">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/946px-Javascript_badge.svg.png" alt="JavaScript">
+                JavaScript
+            </div>
+            <div class="skill">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1200px-Logo_C_sharp.svg.png" alt="CSharp">
+                C#
+            </div>
+            <div class="skill">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" alt="Laravel">
+                Laravel
+            </div>
+            <div class="skill">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="Python">
+                Python
+            </div>
+          <p>Je vous invite à cliquer ci-dessous pour voir mon tableau de compétences qui représente le bilan de mes deux années de BTS :</p>
+         
+        </div>
+    </div>
+   
+
+    <div class="container content" id="stage">
+        <h2>Stage</h2>
+        <p>J'ai effectué un stage chez Xefi à Rillieux-la-Pape en tant que développeur full stacks. J'ai travaillé sur un projet de création d'une application interne à Xefi, au sein de l'équipe interne (DailyUp). Ce projet comprenait le développement d'une application pour gérer les demandes d'avances sur salaire, en utilisant C# (MudBlazor pour le Front-End) ainsi que d'autres outils de développement comme Swagger pour la description des API.</p>
+        <p>Je vous invite à cliquer ci-dessous pour le détail de mon stage :</p>
+    </div>
+
+    <div class="container content" id="veille">
+        <h2>Veille Technologique</h2>
+        <p>Durant mon parcours en BTS SIO, j'ai mené une veille technologique sur l'internet des objets (IoT) et ses conséquences en cybersécurité, un domaine en pleine expansion et de plus en plus pertinent dans notre société connectée.</p>
+    </div>
+
+    <div class="container content" id="contact">
+        <h2>Contact</h2>
+        <p>Téléphone : 0782664401</p>
+        <p>Email : mekmeb@hotmail.fr</p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Mekaïl Mebarki. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script>
+       
+        window.onscroll = function() { onScroll() };
+        
+      
+        var navbar = document.querySelector('nav');
+        
+       
+        var sticky = navbar.offsetTop;
+        
+        
+        function onScroll() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+</body>
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #eaeaea;
+        
+    }
+    header, footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 2em 0; 
+    }
+    .container {
+        max-width: 1100px;
+        margin: auto;
+        overflow: hidden;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background: #444;
+        color: white;
+        padding: 1em 0; 
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 0,75em; 
+        font-size: 1,5em; 
+    }
+    nav a:hover {
+        background: #555;
+    }
+    
+    .content {
+        padding: 40px; 
+        background: white;
+        margin-bottom: 40px; 
+    }
+    .content h2 {
+        color: #333;
+        font-size: 3em; 
+    }
+    .content p {
+        font-size: 1.5em; 
+    }
+    footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5em 0;
+    width: 100%;
+    
+}
+
+.footer-content {
+    margin: 0 auto;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+    .profile-photo {
+        width: 20%; 
+        height: 20%;
+      
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 40px; 
+    }
+   
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .skill {
+        flex-basis: calc(50% - 10px);
+        display: flex;
+        align-items: center;
+        font-size: 1.5em; 
+    }
+    .skill img {
+        height: 64px; 
+        width: auto;
+        margin-right: 10px;
+    }
+    .sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; 
+  z-index: 1000;
+  display: flex; 
+  justify-content: space-around; 
+  background: #444; 
+}
+</style>
+</html>
